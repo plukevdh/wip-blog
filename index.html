@@ -2,19 +2,17 @@
 layout: default
 ---
 
-<div class="home">
+<section>
+	<ul>
 
-  <h1 class="page-heading">Posts</h1>
+		{% for post in paginator.posts %}
 
-
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+		<li>
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
+
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
       <p class="summary">
         {{ post.excerpt }}
@@ -23,10 +21,11 @@ layout: default
         {% endif %}
       </p>
     </li>
-    {% endfor %}
+
+		{% endfor %}
 
     <!-- Pagination links -->
-    <div class="pagination">
+    <div class="center pagination">
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
       {% endif %}
@@ -37,5 +36,8 @@ layout: default
     </div>
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>
+
+<p class="center rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</section>
+

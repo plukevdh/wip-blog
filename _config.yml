@@ -1,10 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: Work In Progress
 email: wip@plukevdh.me
@@ -12,15 +5,46 @@ description: >
   Rambling thoughts from a work in progress.
   Trying to understand what can be known about God and seeking to discover
   what those things mean for my life. 
-baseurl: "" # the subpath of your site, e.g. /blog
+google_analytics:   UA-42764106-3 # Put your Google Analytics code
+
+baseurl: ""               # the subpath of your site, e.g. /blog
+permalink: /post/:title   # Post permalink
 url: "http://wip.plukevdh.me" # the base hostname & protocol for your site
 twitter_username: plukevdh
+author_gravatar: "0d2cd6ee9324db561c7d097e970ce14d"
 
 # Build settings
 markdown: kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
 excerpt_separator: "<!--more-->"
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 paginate: 5
 
-gems: [jekyll-paginate]
+compress_html:
+    clippings:      all
+
+gems: 
+  - jekyll-paginate
+  - jekyll-sitemap
 paginate_path: "/page/:num/"
 
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
