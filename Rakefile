@@ -2,12 +2,16 @@ require 'date'
 
 desc "Serve local"
 task :run do
-  system "bundle exec jekyll serve"
+  system "bundle exec jekyll serve -D -o"
+end
+
+desc "Build site"
+task :build do
+  system 'bundle exec jekyll build'
 end
 
 desc "Publish site to S3"
-task :publish do
-  system 'bundle exec jekyll build'
+task publish: [:build] do
   system 'bundle exec s3_website push'
 end
 

@@ -8,7 +8,7 @@ description: >
 google_analytics:   UA-42764106-3 # Put your Google Analytics code
 
 baseurl: ""               # the subpath of your site, e.g. /blog
-permalink: /post/:title   # Post permalink
+permalink: /post/:title.html   # Post permalink
 url: "http://wip.plukevdh.me" # the base hostname & protocol for your site
 twitter_username: plukevdh
 author_gravatar: "0d2cd6ee9324db561c7d097e970ce14d"
@@ -16,35 +16,14 @@ author_gravatar: "0d2cd6ee9324db561c7d097e970ce14d"
 # Build settings
 markdown: kramdown
 kramdown:
-    input:          GFM
+    input: GFM
 sass:
-    style:          :compressed
+    style: :compressed
 excerpt_separator: "<!--more-->"
-include:            [ "robots.txt" ]
-exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+include: [ "robots.txt" ]
+exclude: [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 paginate: 5
-
-compress_html:
-    clippings:      all
 
 gems: 
   - jekyll-paginate
-  - jekyll-sitemap
 paginate_path: "/page/:num/"
-
-defaults:
-  -
-    scope:
-      path:         ""
-    values:
-      layout:       "null"
-  -
-    scope:
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      type:         "posts"
-    values:
-      layout:       "post"
