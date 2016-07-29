@@ -343,6 +343,14 @@ section {
         letter-spacing: 1px;
         text-transform: uppercase;
       }
+      p {
+        a {
+          text-decoration: underline;
+           &:hover {
+            border: none;
+          }
+        }
+      }
       @media (min-width: 992px) {a {
           border-bottom: 2px solid transparent;
           &:hover {

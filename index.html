@@ -7,19 +7,17 @@ layout: default
 
 		{% for post in paginator.posts %}
 
-		<li>
+		<li class="summary">
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
 
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-      <p class="summary">
-        {{ post.excerpt }}
-        {% if post.excerpt.size != post.content.size %}
-          <a class="post-more" href="{{ post.url | prepend: site.baseurl }}">more...</a>
-        {% endif %}
-      </p>
+      {{ post.excerpt }}
+      {% if post.excerpt.size != post.content.size %}
+        <a class="post-more" href="{{ post.url | prepend: site.baseurl }}">more...</a>
+      {% endif %}
     </li>
 
 		{% endfor %}
