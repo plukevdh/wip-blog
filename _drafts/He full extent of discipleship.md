@@ -1,0 +1,7 @@
+# The full extent of discipleship
+
+- God has placed two passages on my plate back-to-back which require no small order of self-evaluation. Both come fairly closely spaced in the gospel of Luke. The first is Luke 14:25-33:
+
+> Now great crowds accompanied him, and he turned and said to them, "If anyone comes to me and does not hate his own father and mother and wife and children and brothers and sisters, yes, and even his own life, he cannot be my disciple. Whoever does not bear his own cross and come after me cannot be my disciple. For which of you, desiring to build a tower, does not first sit down and count the cost, whether he has enough to complete it? Otherwise, when he has laid a foundation and is not able to finish, all who see it begin to mock him, saying, 'This man began to build and was not able to finish.' Or what king, going out to encounter another king in war, will not sit down first and deliberate whether he is able with ten thousand to meet him who comes against him with twenty thousand? And if not, while the other is yet a great way off, he sends a delegation and asks for terms of peace. So therefore, any one of you who does not renounce all that he has cannot be my disciple. 
+
+We observe first this is a statement made to a wide group of people, not his disciples, not a specific individual struggling with a specific idolatry, but to "great crowds". P
